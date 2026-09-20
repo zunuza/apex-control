@@ -1,0 +1,48 @@
+<Window x:Class="ApexControl.App.RestoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Restore a profile from a backup" Icon="Assets/app.ico" Width="780" Height="480" MinWidth="620" MinHeight="360"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False"
+        Background="{StaticResource WindowBrush}" Foreground="{StaticResource TextBrush}" FontFamily="{StaticResource AppFont}" FontSize="13">
+    <Grid Margin="20,16,20,16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="16"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.ColumnSpan="3" Style="{StaticResource MutedText}" Margin="0,0,0,10"
+                   Text="Pick a saved copy. One profile is written, back to the profile the copy was saved from (an all-profiles backup restores the profile you are editing); you'll be shown what you picked and asked to confirm before anything is sent. Restoring an older copy undoes changes made to that profile since."/>
+
+        <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource Card}" Padding="4">
+            <ListBox ItemsSource="{Binding Backups}" SelectedItem="{Binding SelectedBackup}" BorderThickness="0" Background="Transparent">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="6,5">
+                            <TextBlock Text="{Binding Name}" FontWeight="SemiBold"/>
+                            <TextBlock Text="{Binding Kind}" Style="{StaticResource MutedText}" FontSize="12"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" Style="{StaticResource Card}">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock Text="{Binding SelectedBackup.Details}" FontSize="12" TextWrapping="Wrap"/>
+            </ScrollViewer>
+        </Border>
+
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="3" Margin="0,14,0,0">
+            <Button DockPanel.Dock="Left" Content="Open backups folder" Style="{StaticResource SecondaryButton}" Command="{Binding OpenBackupsFolderCommand}"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Cancel" Style="{StaticResource SecondaryButton}" IsDefault="True" IsCancel="True" Margin="0,0,10,0" Click="OnCancel"/>
+                <Button Content="Restore this copy..." Style="{StaticResource PrimaryButton}" IsEnabled="{Binding SelectedBackup.Info.HasSlot1}" Click="OnRestore"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ApexDeviceScan</AssemblyName>
+    <RootNamespace>ApexDeviceScan</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <!--
+    Publish only settings (single self contained exe) are intentionally left
+    out of the main PropertyGroup above. If they were unconditional, even a
+    plain "dotnet run" would try to resolve the full win-x64 runtime pack,
+    which is unnecessary bloat for just running the tool. Apply them
+    explicitly at publish time on the command line instead. See README.md
+    for the exact publish command.
+  -->
+
+  <ItemGroup>
+    <!-- HidSharp: Apache-2.0-licensed, pure managed HID access. No accounts, no phoning home. -->
+    <PackageReference Include="HidSharp" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

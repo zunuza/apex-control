@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FAA89FB-8E0B-455D-8DC8-524F5B3CB426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexControl.Core", "src\ApexControl.Core\ApexControl.Core.csproj", "{9B76085A-31C9-43A6-8EBD-15938544525D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{7E955BF4-2A62-43EB-8179-E6D6B615DFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexDeviceScan", "tools\ApexDeviceScan\ApexDeviceScan.csproj", "{13D14DF6-D5C2-454D-90C9-558DA5F4F624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexActuation", "tools\ApexActuation\ApexActuation.csproj", "{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexMacro", "tools\ApexMacro\ApexMacro.csproj", "{BE43B691-FE22-49F6-B212-CD2C502CC865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexControl.App", "src\ApexControl.App\ApexControl.App.csproj", "{07AD17A2-4F86-46AA-8718-B098910DB8F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B76085A-31C9-43A6-8EBD-15938544525D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B76085A-31C9-43A6-8EBD-15938544525D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B76085A-31C9-43A6-8EBD-15938544525D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B76085A-31C9-43A6-8EBD-15938544525D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D14DF6-D5C2-454D-90C9-558DA5F4F624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D14DF6-D5C2-454D-90C9-558DA5F4F624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D14DF6-D5C2-454D-90C9-558DA5F4F624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D14DF6-D5C2-454D-90C9-558DA5F4F624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE43B691-FE22-49F6-B212-CD2C502CC865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE43B691-FE22-49F6-B212-CD2C502CC865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE43B691-FE22-49F6-B212-CD2C502CC865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE43B691-FE22-49F6-B212-CD2C502CC865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AD17A2-4F86-46AA-8718-B098910DB8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AD17A2-4F86-46AA-8718-B098910DB8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AD17A2-4F86-46AA-8718-B098910DB8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AD17A2-4F86-46AA-8718-B098910DB8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B76085A-31C9-43A6-8EBD-15938544525D} = {4FAA89FB-8E0B-455D-8DC8-524F5B3CB426}
+		{13D14DF6-D5C2-454D-90C9-558DA5F4F624} = {7E955BF4-2A62-43EB-8179-E6D6B615DFE2}
+		{E2D37976-0F7F-4E66-B9F0-3346AFA73C1D} = {7E955BF4-2A62-43EB-8179-E6D6B615DFE2}
+		{BE43B691-FE22-49F6-B212-CD2C502CC865} = {7E955BF4-2A62-43EB-8179-E6D6B615DFE2}
+		{07AD17A2-4F86-46AA-8718-B098910DB8F3} = {4FAA89FB-8E0B-455D-8DC8-524F5B3CB426}
+	EndGlobalSection
+EndGlobal

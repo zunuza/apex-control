@@ -1,0 +1,15 @@
+# Raw USB captures (large evidence files, not needed to build or verify)
+captures/
+*.pcapng
+
+# Keyboard profile dumps and pre-write backups (specific to one keyboard)
+backups/
+
+# Build output
+**/bin/
+**/obj/
+
+# Full USB device list of this PC, including other devices' serial numbers - keep local
+docs/apex-device-scan-baseline.log
+publish/
+publish-standalone/

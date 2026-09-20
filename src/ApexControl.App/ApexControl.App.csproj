@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ApexControl.App</RootNamespace>
+    <AssemblyName>ApexControl</AssemblyName>
+    <AssemblyTitle>Apex Control</AssemblyTitle>
+    <Product>Apex Control</Product>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\app.ico" />
+    <Resource Include="Fonts\*.ttf" />
+    <Resource Include="Fonts\*.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApexControl.Core\ApexControl.Core.csproj" />
+  </ItemGroup>
+
+  <!-- Release builds carry no debug info, so no build-machine paths (which include the Windows user name) end up in the exe. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildProjectDirectory)=src</PathMap>
+  </PropertyGroup>
+
+</Project>

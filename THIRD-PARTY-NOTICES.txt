@@ -1,0 +1,25 @@
+Third-party notices for Apex Control
+====================================
+
+Apex Control's own code is under the MIT License (see LICENSE). It includes or bundles:
+
+HidSharp 2.1.0
+  Copyright 2010-2019 James Bellinger
+  Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at
+  http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific
+  language governing permissions and limitations under the License.
+  Project: http://www.zer7.com/software/hidsharp
+
+Hauora Sans
+  Copyright (c) 2020 WCYS & Co. / The Hauora Project Authors
+  Licensed under the SIL Open Font License, Version 1.1. The full license text is in src/ApexControl.App/Fonts/OFL.txt.
+  https://github.com/WCYS-Co/Hauora-Sans
+
+The .NET runtime (included in the standalone build)
+  Copyright (c) .NET Foundation and Contributors. Licensed under the MIT License.
+  https://github.com/dotnet/runtime
+
+"SteelSeries", "Apex" and "GG" belong to their owners. Apex Control is an independent project and is not affiliated with
+or endorsed by SteelSeries.
