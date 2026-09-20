@@ -24,6 +24,13 @@ Sample data only (made-up profile names), rendered by the app's built-in preview
 **Macro editor:** record with the keyboard or edit the timings block by block.
 
 ![Macro editor](docs/images/macro-editor.png)
+## Does it work on my keyboard?
+
+Apex Control is built and tested on the wired Apex Pro TKL only, and it never writes to any other model. If you have a different Apex, the **Compatibility...** window (top bar) shows what Windows reports for your keyboard and can optionally read its profile to see whether it has the TKL's layout. Nothing is uploaded: you copy the report or attach the export yourself.
+
+![Compatibility window](docs/images/compatibility.png)
+
+**[Send a compatibility report](https://github.com/zunuza/apex-control/issues/new?template=compatibility.md)** (opens a pre-filled issue with the steps).
 **Out of scope, on purpose:** RGB and OLED (not worth the effort), and actuation values
 above 3.6 mm other than the 4.0 mm maximum (nobody uses them).
 
