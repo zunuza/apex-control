@@ -85,6 +85,7 @@ contains model IDs and format checks only: no serial numbers or device paths.
 
 CREDITS
 -------
+  Source code, updates and compatibility reports: https://github.com/zunuza/apex-control
   Made by zunuza. If it helped you: https://ko-fi.com/zunuza  ("buy me a coffee!")
   Font: Hauora Sans (SIL Open Font License, included with the app source).
   USB library: HidSharp (Apache License 2.0, James Bellinger).
