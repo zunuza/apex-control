@@ -5,6 +5,25 @@ original **wired Apex Pro TKL (model 64734, USB `1038:1614`)**. No account, no c
 telemetry. Everything here was reverse-engineered from USB captures of GG talking to this
 exact keyboard, and every write replays bytes GG itself was seen sending.
 
+## Screenshots
+
+Sample data only (made-up profile names), rendered by the app's built-in preview mode.
+
+**Macros:** click a key, then record a macro live or build it block by block.
+
+![Macros tab](docs/images/macros.png)
+
+**Actuation:** set every key or individual keys, then send it live or save it into the profile.
+
+![Actuation tab](docs/images/actuation.png)
+
+**SOCD:** up to five key pairs (last input, key 1 or key 2 priority), on or off.
+
+![SOCD tab](docs/images/socd.png)
+
+**Macro editor:** record with the keyboard or edit the timings block by block.
+
+![Macro editor](docs/images/macro-editor.png)
 **Out of scope, on purpose:** RGB and OLED (not worth the effort), and actuation values
 above 3.6 mm other than the 4.0 mm maximum (nobody uses them).
 
